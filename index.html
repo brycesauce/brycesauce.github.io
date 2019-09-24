@@ -73,6 +73,8 @@
 <meta charset="UTF-8">
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=1351976118283188&autoLogAppEvents=1"></script>
 <script>
 
   function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
@@ -132,6 +134,8 @@
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
+
+<div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
 
 <div id="status">
 </div>
