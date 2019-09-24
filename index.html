@@ -1,6 +1,11 @@
 <html>
     <body>
         <script>
+            function statusChangeCallback(response) {
+                print(response)
+            }
+
+
             window.fbAsyncInit = function() {
             FB.init({
                 appId      : '1',
