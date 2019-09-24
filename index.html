@@ -15,7 +15,7 @@
             });
                 
             FB.AppEvents.logPageView();   
-                window.location.replace("loggedIn.html")
+                
             };
         
             (function(d, s, id){
@@ -35,9 +35,7 @@
             FB.api('/me', function(response) {console.log(JSON.stringify(response));});
         
             function loginEvent() {
-                FB.Event.subscribe('auth.login', function(){
-                    window.location.href = 'loggedIn.html';
-                });
+                window.location.replace("loggedIn.html")
             }
         </script>
 
